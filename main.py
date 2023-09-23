@@ -61,3 +61,30 @@
 #     print(f"Error: {e}")
 # ####################
 
+
+# """
+# 2. Користувач вводить з клавіатури кількість метрів.
+# Залежно від вибору користувача програма переводить метри милі, дюйми або ярди.
+# """
+# try:
+#     lng = float(input("Enter distance in meters, please: "))
+#
+#     task = int(input("Select units to transform:\n"
+#                      "\t1. Transform to Miles\n"
+#                      "\t2. Transform to Inches\n"
+#                      "\t3. Transform to Yards\n"))
+#     match task:
+#         case 1:
+#             mil = lng * 0.00062137
+#             print(f"Your {lng} meters is {mil} miles")
+#         case 2:
+#             inch = lng * 39.370
+#             print(f"Your {lng} meters is {inch} inches")
+#         case 3:
+#             yard = lng * 1.0936
+#             print(f"Your {lng} meters is {yard} yards")
+#         case _:
+#             print("Invalid task number, try to restart program, please!")
+#
+# except ValueError as e:
+#     print(f"Error: Invalid input type. Enter numbers only!")
